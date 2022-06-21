@@ -1,0 +1,148 @@
+@import "~bootstrap/scss/bootstrap";
+
+
+@font-face {
+  font-family: 'Inter-Bold';
+  src: local('MyFont'), url(./assets/fonts/Inter-Bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  src: local('MyFont'), url(./assets/fonts/Inter-LightBETA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url(./assets/fonts/Inter-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'RFDewiExpanded-Regular';
+  src: url(./assets/fonts/RFDewiExpanded-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'RFDewiExpanded-Semibold';
+  src: url(./assets/fonts/RFDewiExpanded-Semibold.woff) format('woff');
+}
+@font-face {
+  font-family: 'RFDewiExpanded-Bold';
+  src:  url(./assets/fonts/RFDewiExpanded-Bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'RFDewi-Light';
+  src: local('MyFont'), url(./assets/fonts/RFDewi-Light.woff) format('woff');
+}
+@font-face {
+  font-family: 'RFDewi-Regular';
+  src: url(./assets/fonts/RFDewi-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Pier-Regular';
+  src: url(./assets/fonts/pier-regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url(./assets/fonts/Inter-Medium.woff) format('woff');
+}
+
+#popup-root .popup-content{
+  width: 80%;
+  padding: 0;
+  border: none;
+  min-height: auto;
+  max-height: 90%;
+  overflow:scroll;
+
+  @media screen and (max-width: 425px) {
+    width: 90%;
+    min-height: auto;
+    max-height: 90%;
+ }
+}
+
+.App {
+  font-family: Inter;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #393939;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+
+  button{
+    border: none;
+    background: unset;
+  }
+  .nav{
+    font-family: RFDewi-Regular;
+  }
+  .button_custom{
+    font-family: Pier-Regular;
+  }
+  h1, h2{
+    font-family: RFDewiExpanded-Semibold;
+  }
+  h1{
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.04em;
+    color: #393939;
+  }
+  p{
+    line-height: 160%;
+  }
+  h3{
+    font-family: Inter-Medium;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  h2{
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  @media screen and (max-width: 1024px){
+    .fix{
+      display: none;
+    }
+    .header .fix{
+      display: block;
+    }
+    font-size: 12px;
+    h1{
+      font-size: 30px;
+    }
+    h2{
+      font-size: 14px;
+    }
+  
+  }
+  @media screen and (max-width: 768px){
+    .fix{
+      display: none;
+    }
+    .header .fix{
+      display: block;
+    }
+    font-size: 12px;
+    h1{
+      font-size: 22px;
+    }
+    h2{
+      font-size: 14px;
+    }
+    h3{
+      font-size: 16px;
+    }
+  
+  }
+  @media screen and (max-width: 320px){
+    h1{
+      font-size: 18px;
+    }
+  }
+}
+
+
+.gray_arrow{
+  padding-left: .9rem;
+  background: url("./assets/images/VectorGray.svg") left no-repeat;
+}

@@ -1,0 +1,43 @@
+{
+   "app_title": "Заголовок",
+   "language": "Ру",
+   "all_language": "Русский",
+   "welcome_message": "Добро пожаловать",
+   "days_since_release": "it's been {{number_of_days}} days since this video was released",
+   "header": {
+      "navbar": {
+         "about_us": "Про нас",
+         "services": "Сервисы",
+         "projects": "Проекты",
+         "contact_us": "Контакты"
+      }
+   },
+   "button": {
+      "get_a_quote": "Рассчитать"
+   },
+   "under_header": {
+      "better_way": "Лучший способ строить дома"
+   },
+   "nav_menu": {
+      "about": "Про нас",
+      "specification": "Спецификация",
+      "previous_projects": "Предыдущие проекты",
+      "services": "Сервисы",
+      "ongoing_projects": "Текущие проекты",
+      "contacts": "Контакты"
+   },
+   "about": {
+      "title": "Будущее домостроительства",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut neque obcaecati consequuntur magnam assumenda maxime accusamus eos, dicta et labore culpa accusantium nesciunt illum nobis cumque eaque atque velit nisi?",
+      "blocks": {
+         "title_1": "Название будет здесь",
+         "description_1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, natus?",
+         "title_2": "Название будет здесь",
+         "description_2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, natus?",
+         "title_3": "Название будет здесь",
+         "description_3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, natus?",
+         "title_4": "Название будет здесь",
+         "description_4": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, natus?"
+      }
+   }
+}

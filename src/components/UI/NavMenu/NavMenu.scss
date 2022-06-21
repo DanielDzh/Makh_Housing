@@ -1,0 +1,81 @@
+.container-fluid{
+   padding-left: 0;
+   padding-right: 0;
+
+   .collapse:not(.show){
+      display: block;
+
+   }
+
+   .navbar-nav{
+      align-items: center;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-evenly;
+      
+      a{
+         font-family: RFDewi-Light;
+         font-size: 14px;
+         line-height: 17px;
+         color: #393939AB;
+      }
+
+      @media screen and (max-width: 989px) {
+         flex-direction: row;
+      }
+      @media screen and (max-width: 768px) {
+         flex-direction: column;
+      }
+      
+      .active{
+         position: relative;
+         text-decoration: none;
+         padding-left: 0;
+         transition: all .5s ease;
+         letter-spacing: 0.04em;
+
+         &:not(:last-of-type){
+            margin-right: 2.5rem;
+         }
+
+         @media screen and (max-width: 768px) {
+
+            &:not(:last-of-type){
+               margin-right: 0;
+            }
+            color: #FFF;
+            padding: 0;
+            padding-bottom: 2rem;
+            font-size: 15px;
+            line-height: 18px;
+         }
+         @media screen and (max-width: 375px) {
+            &:last-of-type{
+               padding-bottom: 1rem;
+            }
+         }
+         &:hover{
+            list-style-type: none;
+            color: #393939;
+            cursor: pointer;
+            
+            &:before{
+               width: 100%;
+            }
+         }
+         &::before{
+            content: "";
+            position: absolute;
+            height: 1px;
+            bottom: -5px;
+            width: 0%;
+            display: block;
+            background: #000;
+            transition: width .3s linear;
+         }
+         
+      }
+   }
+}

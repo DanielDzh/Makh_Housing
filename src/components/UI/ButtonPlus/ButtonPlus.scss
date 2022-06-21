@@ -1,0 +1,70 @@
+
+.button_custom{
+   display: flex;
+   align-items: center;
+   color: #393939;
+   cursor: pointer;
+   text-transform: uppercase;
+   letter-spacing: 0.09em;
+   width: fit-content;
+   position: relative;
+   // margin: 0 auto;
+   width: fit-content;
+
+   justify-content: center;
+
+   &.underline{
+      position: relative;
+
+      &::after{
+         content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      opacity: .4;
+      background-color: #E34600;
+      left: 0rem;
+      bottom: -3px;
+      }
+
+   }
+   &_title{
+      position: relative;
+   }
+
+   &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0%;
+      height: 1px;
+      opacity: .4;
+      background-color: #E34600;
+      left: 0rem;
+      bottom: -2px;
+      transition: width .2s ease-in;
+
+   }
+   &:hover{
+      color: #E34600;
+      position: relative;
+
+      &::after{
+         width: 100%;
+         
+      }
+   }
+}
+.plus_button{
+   padding-left: 1rem;
+   padding-top: 6px;
+   background: url("../../../assets/images/Plus.svg") left 10%/8% 100% no-repeat;
+
+  
+ }
+ .red_arrow{
+   background: url("../../../assets/images/VectorRed.svg") right no-repeat;
+   padding-right: .9rem;
+   padding-top: 0.3rem;
+ }

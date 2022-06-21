@@ -1,0 +1,146 @@
+.lock{
+   overflow: hidden;
+}
+.unLock{
+   overflow: scroll;
+}
+
+.menu{
+   z-index: 15;
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   right: 0;
+   top: 0;
+   transform: translate(130%);
+   transition: all .5s;
+
+   &.active{
+      transform: translate(0%);
+   }
+
+   .header{
+      padding: 13px 20px;
+      align-self: flex-start;
+
+      .content_img_wrapp{
+         width: 100%;
+
+         img{
+            height: 2.7rem;
+         }
+      }
+   }
+
+   .blur{
+      width: 50%;
+      height: 100vh;
+      right: 50%;
+      backdrop-filter: blur(2px);
+      position: absolute;
+
+      @media screen and (max-width: 768px){
+         backdrop-filter: none;
+
+      }
+   }
+   .menu__content{
+      margin-left: auto;
+      width: 50%;
+      height: fit-content;
+      min-height: 100%;
+      background-color: #FFFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all .5s;
+      box-shadow: 0px 1px 1px rgba(119, 119, 119, 0.06), 0px 3px 8px rgba(119, 119, 119, 0.15);
+
+
+      @media screen and (max-width: 768px){
+         width: 100%;
+      }
+
+      .fix{
+         position: static;
+         color: #868686;
+         font-size: 14px;
+         line-height: 17px;
+         margin-top: 3rem;
+
+         .fix_container{
+            padding: 0;
+            padding-right: 5px;
+            .item{
+               color: #868686;
+               justify-content: center;
+               margin-bottom: 1rem;
+
+               &:hover{
+                  color: #000;
+
+                  .circle{
+                     background-color: rgb(116, 116, 116);
+                  }
+               }
+               &.color{
+                  color: #E34600;
+
+                  &:hover{
+                     color: #E34600;
+      
+                  }
+                  li{
+                     &:hover{
+                        color: #E34600;
+                     }
+                  }
+               }
+               li{
+                  &:hover{
+                     color: rgb(116, 116, 116);
+                  }
+               }
+            }
+         }
+      }
+      .menuButton{
+         margin-top: 4rem;
+         position: relative;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+
+         .button_custom:hover::after{
+            width: 0;
+         }
+         &::after{
+            content: "";
+            position: absolute;
+            display: block;
+            background-color: #E34600;
+            height: 1px;
+            width: 75%;
+            bottom: -8px;
+            margin: auto;
+         }
+      }
+
+      #breadcrumb{
+         margin-top: 7rem;
+      }
+      .menuLang{
+         font-size: 14px;
+         margin-top: 1.6rem;
+         display: flex;
+         align-items: center;
+      }
+   }
+   ul li a{
+      color: white;
+      text-decoration: none;
+   }
+   ul{
+      text-align: center;
+   }
+}

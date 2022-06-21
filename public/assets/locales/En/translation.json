@@ -1,0 +1,43 @@
+{
+   "app_title": "Title",
+   "language": "En",
+   "all_language": "English",
+   "welcome_message": "Welcome",
+   "days_since_release": "it's been {{number_of_days}} days since this video was released",
+   "header": {
+      "navbar": {
+         "about_us": "About Us",
+         "services": "Services",
+         "projects": "Projects",
+         "contact_us": "Contact Us"
+      }
+   },
+   "button": {
+      "get_a_quote": "Get a quote"
+   },
+   "under_header": {
+      "better_way": "A better way to build homes"
+   },
+   "nav_menu": {
+      "about": "About",
+      "specification": "Specification",
+      "previous_projects": "Previous Projects",
+      "services": "Services",
+      "ongoing_projects": "Ongoing Projects",
+      "contacts": "Contacts"
+   },
+   "about": {
+      "title": "The future of homebuilding",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut neque obcaecati consequuntur magnam assumenda maxime accusamus eos, dicta et labore culpa accusantium nesciunt illum nobis cumque eaque atque velit nisi?",
+      "blocks": {
+         "title_1": "Title will be here",
+         "description_1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, natus?",
+         "title_2": "Title will be here",
+         "description_2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, natus?",
+         "title_3": "Title will be here",
+         "description_3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, natus?",
+         "title_4": "Title will be here",
+         "description_4": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, natus?"
+      }
+   }
+}
